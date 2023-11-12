@@ -12,7 +12,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -20,26 +20,27 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:scaleType="fitXY"
-                    android:src="@tools:sample/avatars"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/top_background" />
-
-                <ImageView
                     android:id="@+id/imageView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/profile"
-                    tools:layout_editor_absoluteX="46dp"
-                    tools:layout_editor_absoluteY="77dp" />
+                    tools:layout_editor_absoluteX="35dp"
+                    tools:layout_editor_absoluteY="45dp" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:contentDescription="Profile Header"
+                    android:scaleType="fitXY"
+                    android:src="@tools:sample/avatars"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/top_background" />
 
                 <TextView
                     android:id="@+id/textView"
@@ -47,23 +48,42 @@
                     android:layout_height="wrap_content"
                     android:text="The Doctor"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                    tools:layout_editor_absoluteX="46dp"
-                    tools:layout_editor_absoluteY="174dp" />
+                    tools:layout_editor_absoluteX="33dp"
+                    tools:layout_editor_absoluteY="150dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@tools:sample/avatars"
+                    app:srcCompat="@drawable/top_ic_1"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="115dp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:ba
+                    tools:layout_editor_absoluteX="180dp"
+                    tools:layout_editor_absoluteY="96dp">
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
 
-    <TextView
-        android:id="@+id/text_dashboard"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
